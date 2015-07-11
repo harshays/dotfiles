@@ -12,6 +12,8 @@ Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
 Bundle 'ntpeters/vim-better-whitespace'
+Plugin 'rizzatti/dash.vim'
+Plugin 'flazz/vim-colorschemes'
 
 call vundle#end()
 
@@ -29,6 +31,9 @@ set autoindent
 set expandtab
 set laststatus=2
 
+" colorcolumn alternative
+call matchadd('ColorColumn', '\%79v', 50)
+
 " tab completionn
 function! Tab_Or_Complete()
   if col('.')>1 && strpart( getline('.'), col('.')-2, 3 ) =~ '^\w'
@@ -40,9 +45,9 @@ endfunction
 
 " colors
 let g:solarized_termcolors=256
-syntax enable
+syntax on
 set background=dark
-colorscheme solarized
+colorscheme Tomorrow-Night
 
 " short commit messages
 autocmd Filetype gitcommit setlocal spell textwidth=72
@@ -50,18 +55,10 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 " mappings
 inoremap <S-Tab> <C-D>
 inoremap jj <Esc>
-
-" quicker window switching
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
-
 nnoremap <Leader>t :NERDTree<CR>
 nnoremap <Leader>w :StripWhitespace<CR>
-
+nmap <silent> <Leader>d <Plug>DashSearch
 inoremap <Tab> <c-r>=Tab_Or_Complete()<CR>
-
 
 " Remember cursor position
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif

@@ -1,17 +1,10 @@
-if ls --color > /dev/null 2>&1; then # GNU `ls`
-    colorflag="--color"
-else # OS X `ls`
-    colorflag="-G"
-fi
+colorflag="-G"
 
-# List all files colorized in long format
-alias ll='ls -lh'
-# List all files colorized in long format, including dot files
-alias la="ls -lha"
 # List only directories
 alias lsd='ls -l | grep "^d"'
 # Always use color output for `ls`
-alias ls="command ls ${colorflag}"
+alias l='ls'
+alias ls="ls ${colorflag}"
 # Show only dotfiles
 alias lsh='ls -a | grep "^\."'
 
@@ -46,6 +39,14 @@ alias gdf='git diff'
 alias gck='git checkout'
 alias gbr='git branch'
 alias gad='git add'
+alias gsh='git show'
+alias gmg='git merge --ff-only'
+alias grb='git rebase'
+alias gls='git ls-tree'
+
+alias grep='grep --color=auto'
+alias refresh='source ~/.bash_profile'
+alias diff='colordiff'
 
 # virtualenv setup
 export WORKON_HOME=$HOME/.virtualenvs
