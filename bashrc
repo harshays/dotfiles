@@ -17,6 +17,7 @@ alias py='python'
 alias icpcchrome='/usr/bin/open -a "/Applications/Google Chrome.app" "http://codeforces.com" "http://bit.ly/1GTIP9Q"'
 alias icpc='icpcchrome && subl ~/code/github/solutions/codeforces/cpp'
 alias v='vim'
+alias server='python -m SimpleHTTPServer'
 
 # navigation aliases
 alias ..="cd .."
