@@ -45,9 +45,9 @@ endfunction
 
 " colors
 let g:solarized_termcolors=256
-syntax on
+syntax enable
 set background=dark
-colorscheme Tomorrow-Night
+colorscheme solarized
 
 " short commit messages
 autocmd Filetype gitcommit setlocal spell textwidth=72
@@ -59,6 +59,7 @@ nnoremap <Leader>t :NERDTree<CR>
 nnoremap <Leader>w :StripWhitespace<CR>
 nmap <silent> <Leader>d <Plug>DashSearch
 inoremap <Tab> <c-r>=Tab_Or_Complete()<CR>
+imap <Leader>s <Esc>:w<CR>
 
 " Remember cursor position
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
@@ -70,3 +71,6 @@ set dir=~/.vim/sessions
 " show airline buffer, change theme
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='murmur'
+
+" run python scripts
+autocmd FileType python nnoremap <buffer> <Leader>r :exec '!python' shellescape(@%, 1)<CR>
