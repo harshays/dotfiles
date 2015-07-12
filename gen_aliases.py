@@ -1,6 +1,4 @@
 import os
-from copy import deepcopy
-from functools import partial
 """
 gen.py
 Script to generate bash aliases for all mac applications in /Applications
