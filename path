@@ -1,0 +1,25 @@
+#! usr/bin/sh
+
+# Add Homebrew `/usr/local/bin` and User `~/bin` to the `$PATH`
+PATH=/usr/local/bin:$PATH
+PATH=$HOME/bin:$PATH
+PATH="/usr/local/heroku/bin:$PATH"
+
+# Initialization for FDK command line tools
+FDK_EXE="/Users/harshay/bin/FDK/Tools/osx"
+PATH=${PATH}:"/Users/harshay/bin/FDK/Tools/osx"
+PATH=/usr/local/share/python:$PATH
+PATH=/usr/local/share/npm/bin:$PATH
+
+export PATH
+export FDK_EXE
+
+# virtual env setup
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/code
+
+# make vim default
+export EDITOR="vim"
+export GIT_EDITOR="vim"
+
+
