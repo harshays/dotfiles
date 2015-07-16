@@ -22,4 +22,4 @@ export PROJECT_HOME=$HOME/code
 export EDITOR="vim"
 export GIT_EDITOR="vim"
 
-
+export LSCOLORS=exfxcxdxbxexexabagacad

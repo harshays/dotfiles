@@ -1,8 +1,9 @@
-#! usr/bin/sh
+#!/usr/bin/sh
 
 colorflag='-G'
 
 alias l='ls'
+alias ls='ls ${colorflag}'
 alias lsd='ls -l | grep "^d"'
 alias lsh='ls -a | grep "^\."'
 
