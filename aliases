@@ -11,6 +11,7 @@ alias ipynb='ipython notebook'
 alias py='python'
 alias v='vim'
 alias server='python -m SimpleHTTPServer'
+alias opencrontab='env EDITOR=nano crontab -e'
 
 # navigation aliases
 alias ..="cd .."
