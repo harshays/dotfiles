@@ -14,6 +14,7 @@ Plugin 'altercation/vim-colors-solarized'
 Bundle 'ntpeters/vim-better-whitespace'
 Plugin 'rizzatti/dash.vim'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'jelera/vim-javascript-syntax'
 
 call vundle#end()
 
