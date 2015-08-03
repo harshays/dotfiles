@@ -24,6 +24,8 @@ alias vimrc='vim ~/.vimrc'
 # build/run aliases
 alias cppcompile='c++ -std=c++11 -stdlib=libc++'
 alias activate='source venv/bin/activate'
+alias pytest='nosetests --verbosity=2 --with-coverage --cover-package=$1'
+alias pyinstall='python setup.py install'
 
 # git aliases
 alias gst='git status'
