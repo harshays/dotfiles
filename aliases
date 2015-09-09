@@ -26,6 +26,7 @@ alias cppcompile='c++ -std=c++11 -stdlib=libc++'
 alias activate='source venv/bin/activate'
 alias pyinstall='python setup.py install'
 alias pyclean='rm -rf __pycache__ *.pyc'
+alias resume='python ~/code/github/scripts/resume/resume.py'
 
 # git aliases
 alias gst='git status'

@@ -52,6 +52,10 @@ colorscheme solarized
 
 " short commit messages
 autocmd Filetype gitcommit setlocal spell textwidth=72
+" tabs for makefiles
+autocmd FileType make setlocal noexpandtab
+" tpp syntax coloring
+au Bufread,BufNewFile *.tpp set filetype=cpp
 
 " mappings
 inoremap <S-Tab> <C-D>
