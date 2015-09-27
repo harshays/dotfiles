@@ -27,6 +27,7 @@ alias activate='source venv/bin/activate'
 alias pyinstall='python setup.py install'
 alias pyclean='rm -rf __pycache__ *.pyc'
 alias resume='python ~/code/github/scripts/resume/resume.py'
+alias jot='python ~/code/github/jot/jot.py'
 
 # git aliases
 alias gst='git status'
