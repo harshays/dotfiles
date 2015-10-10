@@ -31,6 +31,10 @@ set shiftwidth=4
 set autoindent
 set expandtab
 set laststatus=2
+set cursorline
+set lazyredraw
+set showmatch
+
 
 " colorcolumn alternative
 call matchadd('ColorColumn', '\%79v', 50)
