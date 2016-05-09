@@ -10,7 +10,7 @@ source ~/.misc.sh
 source /usr/local/bin/virtualenvwrapper.sh
 
 # app aliases
-eval "$(python ~/code/github/dotfiles/gen_aliases.py)"
+# eval "$(python ~/code/github/dotfiles/gen_aliases.py)"
 
 
 # autojump

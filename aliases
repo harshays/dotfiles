@@ -28,6 +28,7 @@ alias pyinstall='python setup.py install'
 alias pyclean='rm -rf __pycache__ *.pyc'
 alias resume='python ~/code/github/scripts/resume/resume.py'
 alias jot='python ~/code/github/jot/jot.py'
+alias morning='python ~/code/github/scripts/misc/morning/morning.py'
 
 # git aliases
 alias gst='git status'
@@ -50,3 +51,5 @@ alias diff='colordiff'
 # show and hide . files
 alias showdotfiles="defaults write com.apple.finder AppleShowAllFiles -bool True && killall Finder"
 alias hidedotfiles="defaults write com.apple.finder AppleShowAllFiles -bool False && killall Finder"
+
+alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
